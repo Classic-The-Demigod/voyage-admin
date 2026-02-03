@@ -44,32 +44,32 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     },
     {
       title: "KYC Queue",
-      url: "/kyc",
+      url: "/admin/dashboard/kyc-queue",
       icon: <KycIcon width="20" height="20" color="currentColor" />,
     },
     {
       title: "Bookings",
-      url: "/bookings",
+      url: "/admin/dashboard/bookings",
       icon: <BookingsIcon width="20" height="20" color="currentColor" />,
     },
     {
       title: "Dispute & Claims",
-      url: "/disupute",
+      url: "/admin/dashboard/disputes",
       icon: <DisputeIcon width="20" height="20" color="currentColor" />,
     },
     {
       title: "Payout",
-      url: "/payout",
+      url: "/admin/dashboard/payouts",
       icon: <PayoutIcon width="20" height="20" color="currentColor" />,
     },
     {
       title: "Media Store",
-      url: "/media-store",
+      url: "/admin/dashboard/mediastore",
       icon: <MediaIcon width="20" height="20" color="currentColor" />,
     },
     {
       title: "Analytics",
-      url: "/analytics",
+      url: "/admin/dashboard/analytics",
       icon: <AnalyticsIcon width="20" height="20" color="currentColor" />,
     },
     {
