@@ -2,6 +2,7 @@
 
 import AnalyticsCard from "@/components/dashboard/AnalyticsCard";
 import { MediaStoreList } from "@/components/dashboard/MediaStoreList";
+import { PayoutTable } from "@/components/dashboard/PayoutTable";
 import BookingsIcon from "@/components/svgs/bookings-icon";
 import ClockIcon from "@/components/svgs/clock-icon";
 import KycIcon from "@/components/svgs/kyc-icon";
@@ -46,46 +47,10 @@ export default function PayoutPage() {
           />
         </div>
 
-        <div className="bg-secondary p-6 space-y-2 rounded-xl border border-[#D6D6D6]/40 flex justify-between items-center">
-          <div className="px-4 py-2 min-w-80 rounded-lg border border-[#D6D6D6]/40 flex items-center gap-2">
-            <Image
-              src={"/assets/svgs/search.svg"}
-              width={24}
-              height={24}
-              alt="search"
-            />
+      
 
-            <Input
-              placeholder="Search"
-              className="p-0 border-0 placeholder:text-primary focus-visible:border-0 focus-visible:ring-0 text-primary"
-            />
-          </div>
 
-          <div className="flex items-center gap-4">
-            <Button className="bg-secondary border border-gray-dark h-12">
-              All Request
-              <span>
-                <Image
-                  src={"/assets/svgs/chevron-down.svg"}
-                  width={24}
-                  height={24}
-                  alt="search"
-                />
-              </span>
-            </Button>
-            <Button className="border-0 h-12">
-              <span>
-                <Image
-                  src={"/assets/svgs/download-01.svg"}
-                  width={24}
-                  height={24}
-                  alt="search"
-                />
-              </span>
-              Export CSV
-            </Button>
-          </div>
-        </div>
+        <PayoutTable />
       </section>
     );
 }

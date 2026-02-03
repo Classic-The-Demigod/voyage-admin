@@ -6,6 +6,17 @@ export const accountSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
 });
 
+export const loginSchema = z.object({
+  email: z.string().email("Please enter a valid email address"),
+  password: z.string(),
+  remember: z
+    .boolean()
+    .refine((val) => val === true, {
+      message: "You must agree to the terms and conditions",
+    })
+    .optional(),
+});
+
 export type AccountFormData = z.infer<typeof accountSchema>;
 
 // Step 2: Verification Schema
